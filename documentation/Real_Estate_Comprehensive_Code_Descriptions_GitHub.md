@@ -43,11 +43,13 @@ The modular architecture supports future enhancements, such as adding inception 
 
 Recommendations for improvement: Connect to Yahoo! Finance or another API that can pull the ticker information for the funds and then populate the columns of the BGI table. Benchmark codes also need to be changed to the tickers themselves (e.g. 'VNQ', 'IYR', 'SCHH") since the benchmark is only tracking those funds.
 
-| **Column Name**      | **Data Type** | **Description**                                                        |
-| BENCHMARKCODE           | VARCHAR | Unique internal identifier for the benchmark (e.g., REITBENCH01). **Primary Key** |
-| NAME                    | VARCHAR | Full name or title of the benchmark fund or index.                                |
-| SYMBOL                  | VARCHAR | Market ticker symbol used for the benchmark (e.g., VNQ, IYR, SCHH).               |
-| ISBEGINOFDAYPERFORMANCE | BOOLEAN | Indicates if benchmark performance is measured from beginning-of-day prices.      |
+| **Column Name**           | **Data Type** | **Description**                                                                    |
+|---------------------------|---------------|------------------------------------------------------------------------------------|
+| BENCHMARKCODE              | VARCHAR       | Unique internal identifier for the benchmark (e.g., REITBENCH01). **Primary Key** |
+| NAME                       | VARCHAR       | Full name or title of the benchmark fund or index.                                |
+| SYMBOL                     | VARCHAR       | Market ticker symbol used for the benchmark (e.g., VNQ, IYR, SCHH).               |
+| ISBEGINOFDAYPERFORMANCE    | BOOLEAN       | Indicates if benchmark performance is measured from beginning-of-day prices.      |
+
 
 # Benchmark Performance
 
